@@ -63,7 +63,7 @@ pip install Flask scikit-learn pandas newspaper3k flask-cors
 **4. Run the application:**
 python app.py
 
-text
+
 
 **5. Open in your browser:**
 Navigate to `http://127.0.0.1:5000` to use the application.
