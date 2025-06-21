@@ -1,5 +1,4 @@
-﻿# We created a web-based tool designed to analyze the political bias of a news article or text snippet. It provides a bias prediction (Left or Right) and then fetches contrasting perspectives from a pre-compiled dataset to encourage a more balanced understanding of the topic.
-
+Article-Bias checker
 ---
 
 ### Screenshot
