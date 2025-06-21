@@ -36,9 +36,10 @@ To run this project locally, follow these steps:
 
 **1. Clone the repository:**
 git clone https://github.com/gayathri2210/article-bias-check.git
+
 cd article-bias-check
 
-text
+
 
 **2. Create and activate a virtual environment:**
 
