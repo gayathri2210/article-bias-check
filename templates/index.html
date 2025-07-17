@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Bias Check</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Article Bias Check</h1>
+            <p>Paste an article snippet to analyze its political bias and find contrasting viewpoints.</p>
+        </header>
+
+        <main>
+            <textarea id="articleText" placeholder="Paste your article text here..."></textarea>
+            <button id="analyzeButton">Analyze Text</button>
+        </main>
+
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Analyzing...</p>
+        </div>
+
+        <section id="results" class="hidden">
+            <div id="prediction-box">
+                <h2>Initial Analysis</h2>
+                <p id="predictionResult"></p>
+            </div>
+
+            <h2>Contrasting Perspectives</h2>
+            <div class="articles-container">
+                <div class="article-card" id="left-article">
+                    <h3 class="bias-left">Left-Leaning Perspective</h3>
+                    <h4 id="leftOutlet"></h4>
+                    <p id="leftExcerpt"></p>
+                    <a id="leftUrl" href="#" target="_blank" rel="noopener noreferrer">Read Full Article</a>
+                </div>
+                <div class="article-card" id="right-article">
+                    <h3 class="bias-right">Right-Leaning Perspective</h3>
+                    <h4 id="rightOutlet"></h4>
+                    <p id="rightExcerpt"></p>
+                    <a id="rightUrl" href="#" target="_blank" rel="noopener noreferrer">Read Full Article</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
